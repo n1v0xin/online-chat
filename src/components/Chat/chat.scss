@@ -1,0 +1,42 @@
+.chat {
+  background: #151515;
+  height: 100%;
+
+  &__wrapper {
+    height: 90vh;
+    padding: 25px;
+    overflow-y: scroll;
+
+    @media (max-width: 767px) {
+      padding-bottom: 150px;
+    }
+  }
+
+  &__message {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    width: fit-content;
+    margin-right: 30px;
+    max-width: 600px;
+    clear: both;
+    float: left;
+
+    &--yours {
+      float: right;
+      margin-right: 0;
+      margin-left: 30px;
+    }
+
+    &-username {
+      display: inline-block;
+      padding: 5px;
+      font-size: 12px;
+      background: #fefefe;
+      border-radius: 5px;
+      color: #121212;
+      margin-bottom: 10px;
+    }
+  }
+}
